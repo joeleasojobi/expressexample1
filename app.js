@@ -10,6 +10,6 @@ app.get('/home',(req,res)=>{
     res.send("this is a home page")
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT ||3000,()=>{
     console.log("Server started at ");
 })
